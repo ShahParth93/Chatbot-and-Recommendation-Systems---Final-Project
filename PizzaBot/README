@@ -1,0 +1,22 @@
+Chatbot and Recommendation Systems - Final Project
+RHENY Damien & SHAH Parth
+Link to the github project : --------------
+
+In this project, we have built a chatbot that solves a routine problem.
+Assume that you open your fridge, you can see many ingredients in it such as eggs, milk,..
+But you don't know what meal you can make from those ingredients.
+When asked, this chatbot will answer this question and propose differents meals by calling an API that works without generating a key : https://www.themealdb.com/api.php
+Once you have decided a meal proposed by the chatbot, suppose that you don't know the recipe.
+The API can also tackle this problem and our chatbot will be able to give all the instructions to make your selected dish 
+Finally, the chatbot can recommend something based on your favorite ingredient.
+All you have to do is name an ingredient that you would like to eat, and the chatbot will suggest some meals containing this particular ingredient and your favorite one. It works also for new users by returning random meals based on your ingredient wanted.
+
+In order to test the chatbot, you must have all the librairies written on packages.json installed on your computer.
+You can now launch the server : nodemon server.js
+Then, you need to generate a private connection URL by executing : ngrok http 3000
+This will return 2 URLs, we need the one that begins with 'https'. Also, we need the VerifyToken from config/development.json
+We will copy-paste these 2 elements in the Facebook Developer Page by clicking on "Modifier l'URL de rappel"
+Note that the URL returned by ngrok is only available for 2 hours, after that you will need to generate a new one.
+The server must be running when you are testing the chatbot.
+
+Once you completed all the steps above, you are ready to communicate ! 
